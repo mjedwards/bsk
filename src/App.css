@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* font-family: 'Be Vietnam', sans-serif;
+font-family: 'Darker Grotesque', sans-serif; */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.App {
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr 1fr; */
+}
+
+
+/* home page mobile first design */
+.home-container {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  position: relative;
+  top: 56px;
+  width: 100%;
+}
+
+.header-container {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100vw;
+  height: 35vh;
+  /* background: url('./logos/BoJos\ film\ logo.png');
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+.header-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* body of the hompage */
+.body-container {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 50px;
+}
+
+.body-menu {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+.body-menu .menu-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-menu .menu-list li,h1 {
+  margin-bottom: 10px;
+}
+
+.body-menu h1 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+/* gallery section */
+.gallery-container {
+  margin-top: 20%;
+  grid-column: 1;
+  grid-row: 3;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.gallery-container h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.gallery-container h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.gallery-container p {
+  padding: 10%;
+}
+
+.gallery-container-item {
+  width: 100vw;
+}
+
+.gallery-container-item img {
+  width: 100vw;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+/* map and review section */
+.home-info {
+  grid-column: 1;
+  grid-row: 4;
+  margin-top: 30%;
+}
+
+#wrapped-tabpanel-two > div {
+  padding: 0px;
+}
+
+.MuiBox-root {
+  padding: 0px;
+}
+
+.review-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-container-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.review-container-item p {
+  margin-top: 10%;
+}
+
+
+/* About page styling */
+.about-container {
+  margin-top: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-container h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.about-container-item {
+  margin: 3%;
+  padding: 8%;
+}
+
+.about-container-sub-item {
+  margin-bottom: 10%;
+}
+
+/* Community Page */
+
+.community-container {
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 100vw;
+  height: 100%;
+}
+
+.community-info {
+  margin-top: 10%;
+}
+
+.community-container-item h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.community-container-item p {
+  padding: 8%;
+}
+
+.community-container-item img {
+  width: 75%;
+}
+
+form input,textarea {
+  margin: 10% 0px;
+}
+
+.imageStyle {
+  width: 70vw;
+}
+/* catering page  */
+.catering-info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 23% 8%;
+}
+
+.catering-info div {
+  margin-bottom: 10%;
+}
+
+/* contact page */
+
+/* footer component */
+.footer-container {
+  grid-column: 1;
+  grid-row: 5;
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 2rem;
+}
+
+footer {
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+footer div.footer-menu nav ul li {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer div.footer-menu nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer div.social-ctn {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+footer div.social-ctn img.footer-logo {
+  width: 70%;
+  margin-bottom: 30px;
+}
+footer div.social-ctn div.social-links {
+  margin-bottom: 30px;
+}
+footer div.social-ctn div.social-links a {
+  color: white;
+}
+footer div.social-ctn div.social-links a i {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+footer div.social-ctn a {
+  color: white;
+}
+footer div.misc {
+  display: flex;
+  flex-flow: column;
+}
+footer div.misc a {
+  color: white;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+
+/* divider styling */
+
+.divider {
+  margin:100px auto;
+  max-width: 100%;
+  position:relative;
+}
+
+.divider-mask { 
+    overflow:hidden; height:20px; 
+}
+
+.divider-mask:after { 
+      content:''; 
+      display:block; margin:-25px auto 0;
+      width:100%; height:25px;  
+        border-radius:125px / 12px;
+       box-shadow:0 0 8px #000000;
+}
+.divider span {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  bottom: 0%;
+  margin-bottom: -55px;
+  left: 46%;
+  margin-left: -60px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #000000;
+  background: #fff;
+}
+.divider i {
+    position:absolute;
+    top:4px; bottom:4px;
+    left:4px; right:4px;
+    border-radius:100%;
+    border:1px dashed #000000;
+    text-align:center;
+    line-height:40px;
+    font-style:normal;
+     color:#000000;
+}
+
+.divider i h1 {
+  margin: 40px auto;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+
