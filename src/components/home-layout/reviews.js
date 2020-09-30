@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Avatar from '@material-ui/core/Avatar';
 import person1 from '../../images/review1.jpg'
@@ -7,21 +7,21 @@ import person2 from '../../images/review2.jpg'
 import person3 from '../../images/review3.jpg'
 import person4 from '../../images/review4.jpg'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    '& > *': {
-      margin: theme.spacing(1),
-    },
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     display: 'flex',
+//     '& > *': {
+//       margin: theme.spacing(1),
+//     },
+//   },
+// }));
 
 function Reviews() {
-  const classes = useStyles();
+  // const classes = useStyles();
 
 
   return (
-    <div className={classes.root} className='review-container'>
+    <div className='review-container'>
         <div className='review-container-item'>
             <Avatar alt="Remy Sharp" src={person1} />
             <p>We tried the Bojos for the first time last night and the food was great, freshly cooked very tasty and well presented. The waiters were attentive and service overall was good. Overall a good meal and great value we will certainly be going back.</p>

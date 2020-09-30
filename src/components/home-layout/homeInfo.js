@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -49,15 +49,15 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//     backgroundColor: theme.palette.background.paper,
+//   },
+// }));
 
 function TabsWrappedLabel() {
-  const classes = useStyles();
+  // const classes = useStyles();
   const [value, setValue] = React.useState('one');
 
   const handleChange = (event, newValue) => {
@@ -65,7 +65,7 @@ function TabsWrappedLabel() {
   };
 
   return (
-    <div className={classes.root} className="home-info">
+    <div className="home-info">
       <AppBar position="static" style={barColor}>
         <Tabs value={value} onChange={handleChange} aria-label="wrapped label tabs example">
           <Tab
