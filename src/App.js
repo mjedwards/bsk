@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from "react-router-dom";
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
 import './App.css';
 //components
 import Home from './components/home';

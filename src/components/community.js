@@ -46,8 +46,8 @@ function rand() {
 const Community = (props) => {
     const classes = useStyles();
     // getModalStyle is not a pure function, we roll the style only on the first render
-    const [modalStyle] = React.useState(getModalStyle);
-    const [open, setOpen] = React.useState(false);
+    const [modalStyle] = useState(getModalStyle);
+    const [open, setOpen] = useState(false);
   
     const handleOpen = () => {
       setOpen(true);
@@ -78,7 +78,7 @@ const Community = (props) => {
                         <br></br>
                         Our Work.
                     </h1>
-                    <img src={hands}></img>
+                    <img src={hands} alt='community logo'></img>
                     <p>
                         Bojo's is an adovcate for sponorship and supporting local events and organizations. He has a long history of helping others get their brand and information to the public and the community. <b>If you want more information about being sponsored click the button below!</b>
                     </p>

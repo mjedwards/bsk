@@ -75,7 +75,7 @@ function Navbar() {
             id="simple-menu"
             anchorEl={anchorEl}
             keepMounted
-            open={Boolean(anchorEl)}
+            open={open}
             onClose={handleClose}
             >
             <MenuItem onClick={handleClose}><Link to="/" style={textColor}>HOME</Link></MenuItem>
