@@ -27,12 +27,11 @@ function KidsMenu() {
                 <div class="top-text bye" id="content-1">
                     <h1 class="primary-head">Kid's Menu</h1>
                 </div>
-                <h1><img src={image3} alt="" class="ABimage" /></h1>
+                <img src={image3} alt="" class="ABimage" />
             </div>
             <table className='table-item-1'>  
             <thead>
                 <tr>
-                    <h2></h2>
                     <hr style={hrStyle}></hr>
                     <p style={pStyle}>(Kids Meal include Fries and a Drink)</p>
                 </tr>

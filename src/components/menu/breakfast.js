@@ -29,13 +29,12 @@ function BreakfastMenu() {
             <div class="top-text bye" id="content-1">
                 <h1 class="primary-head">Breakfast</h1>
 		    </div>
-            <h1><img src={image1} alt="" class="ABimage" /></h1>
+            <img src={image1} alt="" class="ABimage" />
             </div>
            
             <table className='table-item-1'>  
                 <thead>
                     <tr>
-                        <h2></h2>
                         <hr style={hrStyle}></hr>
                         <p style={pStyle}>Welcome! We are excited you have chosen to dine with us today. Take a monent to look through our new menu and see what looks tasty to you.Enjoy!</p>
                         <p>Served 7am - 12pm</p>
