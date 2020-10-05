@@ -188,7 +188,7 @@ table {
 
 /* About page styling */
 .about-container {
-  margin-top: 25%;
+  margin-top: 22%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -247,6 +247,44 @@ form input,textarea {
 .imageStyle {
   width: 70vw;
 }
+/* menu page */
+
+.menu-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10%;
+}
+
+.menu-container p {
+  margin: 5% auto;
+}
+
+.menu-container div {
+  display: grid;
+  /* flex-flow: column; */
+  /* align-items: center; */
+}
+
+.menu-container table {
+  margin-top: 5%;
+}
+
+table {
+  margin: 7% auto;
+}
+
+table tbody {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table tbody tr {
+  margin: 6% auto;
+}
 /* catering page  */
 .catering-info {
   display: flex;
@@ -260,7 +298,116 @@ form input,textarea {
   margin-bottom: 10%;
 }
 
+table h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
 /* contact page */
+.contact-container {
+  margin: 25% 10%;
+}
+
+/* styling for universal sections */
+
+/* hero component */
+.top-display {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  width: 100%;
+  height: 60vh;
+}
+
+.top-display-lu {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  width: 100%;
+  height: 60vh;
+}
+
+.top-display-km {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  width: 100%;
+  height: 60vh;
+}
+
+
+.top-display img {
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  width: 100%;
+  height: 50%;
+}
+
+.top-display::after {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  /* box-shadow: inset 60px 90px 150px #eadfdf, inset -60px -90px 150px #eadfdf; */
+}
+
+.top-display-lu img {
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  width: 100%;
+  height: 50%;
+}
+
+.top-display-lu::after {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  /* box-shadow: inset 60px 90px 150px #eadfdf, inset -60px -90px 150px #eadfdf; */
+}
+
+.top-display-km img {
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  width: 100%;
+  height: 50%;
+}
+
+.top-display-km::after {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  /* box-shadow: inset 60px 90px 150px #eadfdf, inset -60px -90px 150px #eadfdf; */
+}
+
+.top-text {
+  grid-column: 2;
+  grid-row: 2;
+  color: #ffffff;
+  /* font-size: 30px; */
+  text-align: center;
+  z-index: 2;
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+.top-text .primary-head {
+  font-size: 2.5rem;
+}
 
 /* footer component */
 .footer-container {
@@ -284,6 +431,7 @@ footer div.footer-menu nav ul li {
 footer div.footer-menu nav ul li a {
   color: white;
   text-decoration: none;
+  font-family: 'Be Vietnam', sans-serif;
 }
 footer div.social-ctn {
   display: flex;
@@ -315,6 +463,7 @@ footer div.misc a {
   color: white;
   margin-bottom: 30px;
   text-decoration: none;
+  font-family: 'Be Vietnam', sans-serif;
 }
 
 
@@ -367,3 +516,57 @@ footer div.misc a {
 }
 
 
+/* meia queries */
+@media (min-width: 700px) {
+  .responsive-table {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .top-display {
+    grid-column: 1/5;
+  }
+
+  .top-display-lu {
+    grid-column: 1/5;
+  }
+
+  .top-display-km {
+    grid-column: 1/5;
+  }
+
+  .table-item-1 {
+    grid-column: 1/5
+  }
+
+  .table-item-2 {
+    grid-column: 1/3
+  }
+
+  .table-item-3 {
+    grid-column: 3/5
+  }
+
+  .table-item-4 {
+    grid-column: 1/3
+  }
+
+  .table-item-5 {
+    grid-column: 3/5
+  }
+
+  .table-item-6 {
+    grid-column: 1/3
+  }
+
+  .table-item-6-5 {
+    grid-column: 1/5
+  }
+
+  .table-item-7 {
+    grid-column: 3/5
+  }
+
+  footer {
+    flex-flow: row nowrap;
+  }
+}

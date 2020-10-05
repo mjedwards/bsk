@@ -6,7 +6,7 @@ import KidsMenu from "./kids"
 
 function MainMenu() {
     return (
-        <div>
+        <div className="menu-container">
             <BreakfastMenu />
             <LunchMenu />
             <KidsMenu />

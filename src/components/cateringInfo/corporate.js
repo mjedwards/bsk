@@ -48,7 +48,7 @@ const Corporate = () => {
   return (
     <Card className={classes.root}>
       <CardHeader
-        title="We Character For Corporate Events"
+        title="We Cater For Corporate Events"
       />
       <CardMedia
         className={classes.media}

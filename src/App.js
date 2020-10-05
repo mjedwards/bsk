@@ -14,8 +14,10 @@ import KidsMenu from './components/menu/kids';
 import Community from './components/community';
 import ContactUs from './components/contact';
 import CateringInfo from './components/catering';
+// import {ScrollToTopControlller} from './components/scrollToTop'
 
 function App() {
+  // ScrollToTopControlller();
   return (
     <div className="App">
       <Navbar />

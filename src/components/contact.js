@@ -48,7 +48,7 @@ const Personal = () => {
   };
 
   return (
-      <div>
+    <div className='contact-container'>
     <Card className={classes.root}>
       <CardHeader
         title="Contact Info"
